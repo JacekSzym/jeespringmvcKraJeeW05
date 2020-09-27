@@ -30,7 +30,7 @@ public class CartController {
     }
 
     @GetMapping(path = "/cart"
-            , produces = "text/html"
+            , produces = "text/html;  charset=UTF-8"
     )
     @ResponseBody
     public String cart() {

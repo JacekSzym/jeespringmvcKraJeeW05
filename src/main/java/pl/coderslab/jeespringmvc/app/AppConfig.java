@@ -20,18 +20,18 @@ import java.util.List;
 @ComponentScan("pl.coderslab.jeespringmvc")
 @EnableWebMvc
 public class AppConfig implements WebMvcConfigurer {
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        StringHttpMessageConverter stringConverter = new StringHttpMessageConverter();
-        stringConverter.setSupportedMediaTypes(Arrays.asList(new MediaType("text", "plain",
-                Charset.forName("UTF-8"))));
-        converters.add(stringConverter);
-
-        StringHttpMessageConverter string2Converter = new StringHttpMessageConverter();
-        string2Converter.setSupportedMediaTypes(Arrays.asList(new MediaType("text", "html",
-                Charset.forName("UTF-8"))));
-        converters.add(string2Converter);
-    }
+//    @Override
+//    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//        StringHttpMessageConverter stringConverter = new StringHttpMessageConverter();
+//        stringConverter.setSupportedMediaTypes(Arrays.asList(new MediaType("text", "plain",
+//                Charset.forName("UTF-8"))));
+//        converters.add(stringConverter);
+//
+//        StringHttpMessageConverter string2Converter = new StringHttpMessageConverter();
+//        string2Converter.setSupportedMediaTypes(Arrays.asList(new MediaType("text", "html",
+//                Charset.forName("UTF-8"))));
+//        converters.add(string2Converter);
+//    }
 
     @Bean
     public ViewResolver viewResolver() {
