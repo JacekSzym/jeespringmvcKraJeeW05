@@ -29,8 +29,8 @@ public class CartController {
         return "addtocart";
     }
 
-    @GetMapping(value = "/cart"
-            //, produces = "text/html; charset=UTF-8"
+    @GetMapping(path = "/cart"
+            , produces = "text/html"
     )
     @ResponseBody
     public String cart() {
