@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 public class FormController {
     @GetMapping("/form")
     public String getForm(){
-        return "form.jsp";
+        return "form";
     }
 
     @PostMapping("/form")

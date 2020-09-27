@@ -17,4 +17,9 @@ public class HelloController {
     public String helloJsp() {
         return "index.jsp";
     }
+
+    @GetMapping("/helloview")
+    public String helloView() {
+        return "hello";
+    }
 }
